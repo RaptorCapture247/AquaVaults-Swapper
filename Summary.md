@@ -185,21 +185,19 @@ How to Use
 
 
 
----
+🔹 Core Functions
 
-Technical Summary of Functions
+Function	Description
 
-Function	Purpose
-
-updateAffiliateDisplay()	Updates the UI for selected affiliate and highlights active vault.
-getCurrentVaults()	Returns current token vault mapping based on selected affiliate.
-updateActiveVault()	Updates the displayed vault address for the selected token.
-connectWallet()	Connects user wallet via Solana provider and updates UI.
+updateAffiliateDisplay()	Updates UI to reflect selected affiliate and active vault.
+getCurrentVaults()	Returns current vaults based on affiliate toggle.
+updateActiveVault()	Displays the vault address for the selected input token.
+connectWallet()	Connects wallet and updates UI.
 disconnectWallet()	Disconnects wallet and resets UI.
-updateBalance()	Fetches and displays user balance for the selected input token.
-getEstimate()	Fetches swap quote from Jupiter API and displays estimated output.
-swap()	Builds, signs, and sends swap transaction to Solana network; handles status updates and errors.
-debugLog(msg)	Logs internal actions and events for debugging purposes.
+updateBalance()	Fetches and displays user token balance.
+getEstimate()	Fetches swap quote and updates estimated output.
+swap()	Builds, signs, and sends swap transaction; handles UI status updates.
+debugLog(msg)	Logs internal swap events for debugging.
 
 
 

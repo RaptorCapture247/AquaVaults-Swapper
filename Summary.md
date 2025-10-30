@@ -68,6 +68,29 @@ Highlighted affiliate badges and animated transaction status.
 
 Input fields and buttons styled for clarity and usability.
 
+### 7. Wallet data / private keys:
+
+window.solana.connect() — relies on the browser wallet (e.g., Phantom).
+
+There is no need for private keys in the file.
+
+
+### 8. Referral program ID:
+
+
+const REFERRAL_PROGRAM_ID = "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4";
+
+This is a public Jupiter program ID.
+
+
+### 9. Local storage / persistent settings:
+
+
+localStorage.setItem("useAffiliate2", useAffiliate2);
+
+Safe — stores only UI preference, not sensitive info.
+
+
 
 
 

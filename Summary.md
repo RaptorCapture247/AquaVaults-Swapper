@@ -193,7 +193,7 @@ Automatically updates vault addresses and UI labels.
 
 Function	Description
 
-(updateAffiliateDisplay)	Updates UI to reflect selected affiliate and active vault.
+(updateAffiliateDisplay)- 	Updates UI to reflect selected affiliate and active vault.
 
 (getCurrentVaults)- Returns current vaults based on affiliate toggle.
 

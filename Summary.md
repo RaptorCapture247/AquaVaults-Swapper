@@ -189,15 +189,23 @@ How to Use
 
 Function	Description
 
-updateAffiliateDisplay()	Updates UI to reflect selected affiliate and active vault.
-getCurrentVaults()	Returns current vaults based on affiliate toggle.
-updateActiveVault()	Displays the vault address for the selected input token.
-connectWallet()	Connects wallet and updates UI.
-disconnectWallet()	Disconnects wallet and resets UI.
-updateBalance()	Fetches and displays user token balance.
-getEstimate()	Fetches swap quote and updates estimated output.
-swap()	Builds, signs, and sends swap transaction; handles UI status updates.
-debugLog(msg)	Logs internal swap events for debugging.
+(updateAffiliateDisplay)	Updates UI to reflect selected affiliate and active vault.
+
+(getCurrentVaults)- Returns current vaults based on affiliate toggle.
+
+(updateActiveVault)-	Displays the vault address for the selected input token.
+
+(connectWallet)- Connects wallet and updates UI.
+
+(disconnectWallet)- Disconnects wallet and resets UI.
+
+(updateBalance)- Fetches and displays user token balance.
+
+(getEstimate)	- Fetches swap quote and updates estimated output.
+
+(swap)- Builds,signs and sends swap transaction; handles UI status updates.
+
+debugLog(msg)	- Logs internal swap events for debugging.
 
 
 

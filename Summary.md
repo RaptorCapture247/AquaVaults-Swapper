@@ -1,4 +1,4 @@
-o⁸# Aqua Vaults Swapper
+# Aqua Vaults Swapper
 
 A web-based Solana token swap interface that allows users to swap between various Solana tokens using the Jupiter Aggregator API, with integrated affiliate vault support. Users can select between two affiliates—Pond0x and Aqua Vaults—each with their own token vaults and rewards. The app supports manual wallet connection, slippage and fee adjustment, and provides real-time balance and estimated output.
 

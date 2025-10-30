@@ -22,7 +22,7 @@ Step 1 — Download the HTML File from GitHub
 
 
 
-Swapper UI.html
+Swapper-UI.html
 
 Windows: Downloads or Desktop
 
@@ -201,7 +201,9 @@ Step 7 — Open the File in Your Browser
 
 
 
-http://localhost:8000/Swapper UI.html
+http://localhost:8000/Swapper-UI.html
+
+
 
 > Phantom Wallet must be installed and unlocked. Opening directly (double-clicking) will not work.
 

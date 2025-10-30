@@ -5,9 +5,9 @@ A web-based Solana token swap interface that allows users to swap between variou
 
 ---
 
-Features
+## Features
 
-1. Affiliate Selection
+### 1. Affiliate Selection
 
 Users can toggle between Pond0x and Aqua Vaults as the affiliate for swaps.
 
@@ -17,7 +17,7 @@ Active affiliate and vault are clearly displayed in the UI.
 
 
 
-2. Wallet Integration
+### 2. Wallet Integration
 
 Supports manual connection via a Solana wallet (e.g., Phantom).
 
@@ -27,7 +27,7 @@ Updates token balances in real-time for the selected input token.
 
 
 
-3. Token Swapping
+### 3. Token Swapping
 
 Supports swaps between multiple Solana tokens:
 SOL, USDC, USDT, wPOND, hSOL, mSOL, PepeOnSOL.
@@ -42,7 +42,7 @@ Provides transaction status updates, confirmation animation, and Solscan link af
 
 
 
-4. Fee and Slippage Controls
+### 4. Fee and Slippage Controls
 
 Adjustable platform fee (in basis points, displayed as %).
 
@@ -52,7 +52,7 @@ Dynamic estimated output based on current fee/slippage settings.
 
 
 
-5. Debugging and Logging
+### 5. Debugging and Logging
 
 Optional debug panel for viewing detailed logs of swap preparation, vault selection, and API responses.
 
@@ -60,7 +60,7 @@ Logs all key events and errors with timestamps.
 
 
 
-6. Responsive and Accessible UI
+### 6. Responsive and Accessible UI
 
 Minimal, clean interface with modern design using CSS grid and flexbox.
 
@@ -74,9 +74,9 @@ Input fields and buttons styled for clarity and usability.
 
 ---
 
-How It Works
+## How It Works
 
-1. Affiliate Vaults
+### 1. Affiliate Vaults
 
 Each affiliate has a set of pre-configured vault addresses for supported tokens.
 
@@ -84,7 +84,7 @@ When a user selects a token and affiliate, the app automatically maps to the cor
 
 
 
-2. Swap Flow
+### 2. Swap Flow
 
 1. User selects input token, output token, amount, and affiliate.
 
@@ -101,9 +101,7 @@ When a user selects a token and affiliate, the app automatically maps to the cor
 5. Status updates reflect progress: preparing → building → wallet approval → sending → confirming → success.
 
 
-
-
-3. Real-time Updates
+### 3. Real-time Updates
 
 Input token balance updates automatically after swaps or token selection.
 
@@ -115,7 +113,9 @@ Estimated output updates automatically when the amount, fee, or slippage changes
 
 ---
 
+
 ## Supported Tokens & Vaults
+
 
 | Token        | Pond0x Vault                        | Aqua Vaults Vault                       |
 |--------------|------------------------------------|----------------------------------------|
@@ -127,9 +127,12 @@ Estimated output updates automatically when the amount, fee, or slippage changes
 | mSOL         | Not supported                       | 49URcyxPiaKRgoEAWfDtJHGWcZus3SVkF39b9Szf3XqC |
 | PepeOnSOL    | 3qGSU2RySrjvQ2iGMts2HZ4ssGVSrBUSGL4jN7LHGhgo | Ff7tzrabm8sxHbL4cTmBDby2EQvvtab6NTh56R69u6KS |
 
+
+
 ---
 
-Configuration
+## Configuration
+
 
 1. RPC Endpoint
 
@@ -160,7 +163,7 @@ Automatically updates vault addresses and UI labels.
 
 ---
 
-How to Use
+## How to Use
 
 1. Open the HTML file in a browser with a Solana wallet extension (e.g., Phantom).
 
@@ -185,7 +188,8 @@ How to Use
 
 
 ---
-Core Functions
+
+## Core Functions
 
 Function	Description
 
@@ -211,7 +215,7 @@ debugLog(msg)	- Logs internal swap events for debugging.
 
 ---
 
-Dependencies
+## Dependencies
 
 Solana Web3.js via CDN
 
@@ -223,7 +227,7 @@ A browser wallet like Phantom or compatible Solana wallet
 
 ---
 
-Notes
+## Notes
 
 All amounts are displayed in UI-friendly units with token-specific decimals.
 

@@ -1,7 +1,7 @@
 # Aqua-Vaults-Swapper
 ---
 
-🪐 Running the HTML Project Locally (Phantom + Helius RPC)
+🪐 Running the Aqua Vaults HTML Swapper Locally (Phantom + Helius RPC)
 
 This project is a single HTML file that must be served via a local server to connect to Phantom Wallet and a Solana RPC via Helius. Opening it directly in the browser will not work.
 
@@ -237,7 +237,7 @@ in the terminal when finished.
 
 ✅ You’re Done!
 
-Your HTML project (Swapper UI.html) is running locally.
+The Aqua Vaults Swapper (Swapper-UI.html) is running locally.
 
 Phantom Wallet is connected.
 

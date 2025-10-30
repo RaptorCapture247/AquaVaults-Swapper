@@ -1,115 +1,230 @@
-# Aqua Vaults Swapper
+#Aqua Vaults Swapper
 
-[![Solana](https://img.shields.io/badge/Solana-FF5C00?style=flat&logo=solana&logoColor=white)](https://solana.com/)  
-[![Jupiter Aggregator](https://img.shields.io/badge/Jupiter-Aggregator-blue)](https://jup.ag)  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+A web-based Solana token swap interface that allows users to swap between various Solana tokens using the Jupiter Aggregator API, with integrated affiliate vault support. Users can select between two affiliates—Pond0x and Aqua Vaults—each with their own token vaults and rewards. The app supports manual wallet connection, slippage and fee adjustment, and provides real-time balance and estimated output.
 
-A **web-based Solana token swap interface** that allows users to swap between Solana tokens using the Jupiter Aggregator API, with integrated affiliate vault support. Users can select between **Pond0x** and **Aqua Vaults** affiliates, each with their own token vaults and rewards.
 
 ---
 
-## 🔹 Features
+Features
 
-- **Affiliate Selection**: Toggle between Pond0x and Aqua Vaults affiliates. Active affiliate vault displayed dynamically.  
-- **Wallet Integration**: Connect your Solana wallet manually (e.g., Phantom). Displays wallet public key and token balances.  
-- **Token Swapping**: Swap SOL, USDC, USDT, wPOND, hSOL, mSOL, PepeOnSOL via Jupiter API. Applies affiliate vault for fees.  
-- **Fee & Slippage Control**: Adjustable platform fee and slippage in basis points (bps). Estimated output updated in real-time.  
-- **Transaction Feedback**: Status updates, animated confirming state, and Solscan link for confirmed transactions.  
-- **Debugging**: Optional debug panel logs detailed swap events and errors.  
-- **Responsive UI**: Clean interface with CSS grid/flexbox, clear input fields, and buttons.  
+1. Affiliate Selection
+
+Users can toggle between Pond0x and Aqua Vaults as the affiliate for swaps.
+
+Each affiliate has dedicated token vaults for different supported tokens.
+
+Active affiliate and vault are clearly displayed in the UI.
+
+
+
+2. Wallet Integration
+
+Supports manual connection via a Solana wallet (e.g., Phantom).
+
+Displays connected wallet public key, or disconnected state.
+
+Updates token balances in real-time for the selected input token.
+
+
+
+3. Token Swapping
+
+Supports swaps between multiple Solana tokens:
+SOL, USDC, USDT, wPOND, hSOL, mSOL, PepeOnSOL.
+
+Uses the Jupiter Aggregator API to fetch swap quotes and perform swaps.
+
+Includes platform fee and slippage control.
+
+Automatically applies the correct affiliate vault for fee collection.
+
+Provides transaction status updates, confirmation animation, and Solscan link after completion.
+
+
+
+4. Fee and Slippage Controls
+
+Adjustable platform fee (in basis points, displayed as %).
+
+Adjustable slippage tolerance (in basis points, displayed as %).
+
+Dynamic estimated output based on current fee/slippage settings.
+
+
+
+5. Debugging and Logging
+
+Optional debug panel for viewing detailed logs of swap preparation, vault selection, and API responses.
+
+Logs all key events and errors with timestamps.
+
+
+
+6. Responsive and Accessible UI
+
+Minimal, clean interface with modern design using CSS grid and flexbox.
+
+Highlighted affiliate badges and animated transaction status.
+
+Input fields and buttons styled for clarity and usability.
+
+
+
+
 
 ---
 
-## 🔹 Supported Tokens & Vaults
+How It Works
 
-| Token        | Pond0x Vault                        | Aqua Vaults Vault                       |
-|--------------|------------------------------------|----------------------------------------|
-| SOL          | 9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG | 2qcR7nCVRmpxHCYTdQ6G1DjNcDzgEq9eQ1ZrxcmjeVy9 |
-| USDC         | 6NqvoPpSYCPEtLEukQaSNs7mS3yK6k285saH9o3vgC96 | 4en3gmtiPtmiHCi5mwT1TrATj4jNe7woJPZLQaWv6Ezu |
-| USDT         | 5LmFGjbae5iWejFVT8UiRLggh1me22nTetmere8SjwKy | 5wV1qSp8n9z5DEGHV6JJoEoxdYeBrnVCtP9LbD4Vwx7D |
-| wPOND        | 6NqvoPpSYCPEtLEukQaSNs3yK6k285saH9o3vgC96 | E4s4KzRBvYQxpFR1L7z7cLDtT814i7bqWFSGgqCDBCn9 |
-| hSOL         | 9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG | 54GcC3SjZzavvVJ5ipFfCvQHNnpPRsJLXUdfxNmeJHHm |
-| mSOL         | Not supported                       | 49URcyxPiaKRgoEAWfDtJHGWcZus3SVkF39b9Szf3XqC |
-| PepeOnSOL    | 3qGSU2RySrjvQ2iGMts2HZ4ssGVSrBUSGL4jN7LHGhgo | Ff7tzrabm8sxHbL4cTmBDby2EQvvtab6NTh56R69u6KS |
+1. Affiliate Vaults
+
+Each affiliate has a set of pre-configured vault addresses for supported tokens.
+
+When a user selects a token and affiliate, the app automatically maps to the correct vault.
+
+
+
+2. Swap Flow
+
+1. User selects input token, output token, amount, and affiliate.
+
+
+2. User connects their Solana wallet manually.
+
+
+3. App fetches a quote from Jupiter API including fee and slippage adjustments.
+
+
+4. User clicks Swap: the transaction is signed by the wallet and sent to Solana.
+
+
+5. Status updates reflect progress: preparing → building → wallet approval → sending → confirming → success.
+
+
+
+
+3. Real-time Updates
+
+Input token balance updates automatically after swaps or token selection.
+
+Estimated output updates automatically when the amount, fee, or slippage changes.
+
+
+
+
 
 ---
 
-## 🔹 Installation & Usage
+Supported Tokens and Vaults
 
-1. Clone or download the repository.  
-2. Open `index.html` (or your HTML file) in a browser with a Solana wallet extension (e.g., Phantom).  
-3. Configure your RPC endpoint in the script:
+Token	Pond0x Vault	Aqua Vaults Vault
 
-```javascript
+SOL	9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG	2qcR7nCVRmpxHCYTdQ6G1DjNcDzgEq9eQ1ZrxcmjeVy9
+USDC	6NqvoPpSYCPEtLEukQaSNs7mS3yK6k285saH9o3vgC96	4en3gmtiPtmiHCi5mwT1TrATj4jNe7woJPZLQaWv6Ezu
+USDT	5LmFGjbae5iWejFVT8UiRLggh1me22nTetmere8SjwKy	5wV1qSp8n9z5DEGHV6JJoEoxdYeBrnVCtP9LbD4Vwx7D
+wPOND	6NqvoPpSYCPEtLEukQaSNs3yK6k285saH9o3vgC96	E4s4KzRBvYQxpFR1L7z7cLDtT814i7bqWFSGgqCDBCn9
+hSOL	9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG	54GcC3SjZzavvVJ5ipFfCvQHNnpPRsJLXUdfxNmeJHHm
+mSOL	Not supported	49URcyxPiaKRgoEAWfDtJHGWcZus3SVkF39b9Szf3XqC
+PepeOnSOL	3qGSU2RySrjvQ2iGMts2HZ4ssGVSrBUSGL4jN7LHGhgo	Ff7tzrabm8sxHbL4cTmBDby2EQvvtab6NTh56R69u6KS
+
+
+
+---
+
+Configuration
+
+1. RPC Endpoint
+
 const RPC_ENDPOINTS = ["Your personal RPC"];
 
-4. Select input token, output token, amount, and affiliate.
+Replace "Your personal RPC" with your Solana RPC URL for network connectivity.
 
 
-5. Click Connect Wallet and approve connection.
+2. Platform Fee & Slippage
+
+Controlled via number inputs in the UI.
+
+Displayed dynamically in percentage.
 
 
-6. Review estimated output; adjust fee/slippage if needed.
+
+3. Affiliate Vault Toggle
+
+Default affiliate: Pond0x.
+
+Checkbox toggles between Pond0x and Aqua Vaults.
+
+Automatically updates vault addresses and UI labels.
 
 
-7. Click Swap and approve the transaction in your wallet.
 
 
-8. Track status and view confirmed transactions on Solscan.
+
+---
+
+How to Use
+
+1. Open the HTML file in a browser with a Solana wallet extension (e.g., Phantom).
+
+
+2. Select the input token, output token, and amount to swap.
+
+
+3. Choose your affiliate by toggling the checkbox.
+
+
+4. Click Connect Wallet and approve connection in your wallet.
+
+
+5. Review estimated output and adjust fee/slippage if needed.
+
+
+6. Click Swap and confirm the transaction in your wallet.
+
+
+7. Track progress in the status box. View the transaction on Solscan once confirmed.
 
 
 
 
 ---
 
-🔹 Configuration
+Technical Summary of Functions
 
-RPC Endpoint: Replace "Your personal RPC" with a Solana RPC URL.
+Function	Purpose
 
-Platform Fee & Slippage: Controlled via UI number inputs (in bps).
-
-Affiliate Toggle: Switch between Pond0x and Aqua Vaults; active vault updated automatically.
-
-
-
----
-
-🔹 Core Functions
-
-Function	Description
-
-updateAffiliateDisplay()	Updates UI to reflect selected affiliate and active vault.
-getCurrentVaults()	Returns current vaults based on affiliate toggle.
-updateActiveVault()	Displays the vault address for the selected input token.
-connectWallet()	Connects wallet and updates UI.
+updateAffiliateDisplay()	Updates the UI for selected affiliate and highlights active vault.
+getCurrentVaults()	Returns current token vault mapping based on selected affiliate.
+updateActiveVault()	Updates the displayed vault address for the selected token.
+connectWallet()	Connects user wallet via Solana provider and updates UI.
 disconnectWallet()	Disconnects wallet and resets UI.
-updateBalance()	Fetches and displays user token balance.
-getEstimate()	Fetches swap quote and updates estimated output.
-swap()	Builds, signs, and sends swap transaction; handles UI status updates.
-debugLog(msg)	Logs internal swap events for debugging.
+updateBalance()	Fetches and displays user balance for the selected input token.
+getEstimate()	Fetches swap quote from Jupiter API and displays estimated output.
+swap()	Builds, signs, and sends swap transaction to Solana network; handles status updates and errors.
+debugLog(msg)	Logs internal actions and events for debugging purposes.
 
 
 
 ---
 
-🔹 Dependencies
+Dependencies
 
 Solana Web3.js via CDN
 
-Jupiter Aggregator API
+Jupiter Aggregator API (https://lite-api.jup.ag)
 
-Browser wallet (e.g., Phantom)
+A browser wallet like Phantom or compatible Solana wallet
 
 
 
 ---
 
-🔹 Notes
+Notes
 
-All amounts are token-decimal aware.
+All amounts are displayed in UI-friendly units with token-specific decimals.
 
-Only tokens with configured vaults per affiliate can be swapped.
+Only tokens with configured vaults per affiliate can be used for swaps.
 
-Fee and slippage are in basis points (bps); 100 bps = 1%.
+Fee and slippage are represented in basis points (bps); 100 bps = 1%.
 
-Handles API errors, missing vaults, and wallet issues gracefully.
+Error handling is implemented for API errors, wallet connection issues, and missing vaults.

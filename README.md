@@ -93,7 +93,7 @@ You need to edit the file to add your Helius RPC URL.
 
 Windows
 
-1. Right-click Swapper UI.html → Open with → Notepad (or VS Code, Notepad++).
+1. Right-click Swapper-UI.html → Open with → Notepad (or VS Code, Notepad++).
 
 
 2. Press Ctrl + F and search for:
@@ -111,7 +111,7 @@ Windows
 
 Mac
 
-1. Right-click Swapper UI.html → Open With → TextEdit (or VS Code).
+1. Right-click Swapper-UI.html → Open With → TextEdit (or VS Code).
 
 
 2. Press Command + F and search for:

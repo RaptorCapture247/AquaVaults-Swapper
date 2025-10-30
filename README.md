@@ -85,10 +85,6 @@ Step 3 — Get a Helius RPC Endpoint
 3. Copy your endpoint URL:
 
 
-
-https://rpc.helius.xyz/?api-key=YOUR_API_KEY
-
-
 ---
 
 Step 4 — Open the HTML File in a Text Editor
@@ -103,14 +99,11 @@ Windows
 2. Press Ctrl + F and search for:
 
 
+"Your Personal RPC"
 
-Your Personal RPC
 
 3. Replace it with your Helius RPC URL:
 
-
-
-const RPC_URL = "https://rpc.helius.xyz/?api-key=YOUR_API_KEY";
 
 4. Save the file (Ctrl + S).
 
@@ -124,8 +117,8 @@ Mac
 2. Press Command + F and search for:
 
 
+"Your Personal RPC"
 
-Your Personal RPC
 
 3. Replace it with your Helius RPC URL and save (Command + S).
 
@@ -155,6 +148,7 @@ Windows Users — How to Find Your Username
 
 
 C:\Users\YourName\Downloads
+
 
 3. The part after C:\Users\ is your Windows username (replace YourName).
 

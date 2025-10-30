@@ -1,4 +1,4 @@
-# Aqua-Vaults-Swapper
+# Aqua Vaults Swapper
 ---
 
 🪐 Running the Aqua Vaults HTML Swapper Locally (Phantom + Helius RPC)

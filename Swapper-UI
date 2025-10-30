@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Aqua Vaults Swapper</title>
+  <title>AquaVaults Swapper</title>
   <script src="https://unpkg.com/@solana/web3.js@1.95.1/lib/index.iife.min.js"></script>
   <style>
     body { font-family: sans-serif; background: #0b0e11; color: #eaeaea; text-align: center; padding: 2rem; }
@@ -64,7 +64,7 @@
   </style>
 </head>
 <body>
-  <h1>Aqua Vaults Swapper</h1>
+  <h1>AquaVaults Swapper</h1>
 
   <div class="info">
     <p><strong>Choose Your Affiliate</strong></p>
@@ -75,9 +75,9 @@
         Pond0x<br><small>(Swap Rewards &</small><br><small>Mining Boost)</small></span>
         <input type="checkbox" id="affiliateToggle" />
         <span id="affiliate2Label" class="toggle-option">
-        Aqua Vaults<br><small>(Support Development)</small></span>
+        AquaVaults<br><small>(Support Development)</small></span>
       </label>
-      <p style="font-size: 0.75rem; color: #64748b; margin-top: 0.5rem;">Check To Use Aqua Vaults</p>
+      <p style="font-size: 0.75rem; color: #64748b; margin-top: 0.5rem;">Check To Use AquaVaults</p>
     </div>
   </div>
 
@@ -153,7 +153,7 @@
 
     };
 
-    // Aqua Vaults Token Vaults (New)
+    // AquaVaults Token Vaults (New)
     const TOKEN_VAULTS_AFFILIATE_2 = {
       "So11111111111111111111111111111111111111112": "2qcR7nCVRmpxHCYTdQ6G1DjNcDzgEq9eQ1ZrxcmjeVy9", // SOL
       "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": "4en3gmtiPtmiHCi5mwT1TrATj4jNe7woJPZLQaWv6Ezu", // USDC
@@ -176,7 +176,7 @@
     };
 
     const REFERRAL_PROGRAM_ID = "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4";
-    const RPC_ENDPOINTS = ["Your personal RPC"];
+    const RPC_ENDPOINTS = ["Your Personal RPC"];
     let connection = new solanaWeb3.Connection(RPC_ENDPOINTS[0], 'confirmed');
 
     let walletPublicKey = null, isWalletConnected = false;
@@ -211,7 +211,7 @@
       const label2 = document.getElementById("affiliate2Label");
       
       if (isAffiliate2) {
-        indicator.textContent = "Aqua Vaults";
+        indicator.textContent = "AquaVaults";
         indicator.className = "affiliate-indicator affiliate-2";
         label1.className = "toggle-option toggle-inactive";
         label2.className = "toggle-option toggle-active-2";
@@ -237,7 +237,7 @@
       const vaults = getCurrentVaults();
       const vault = vaults[inputMint];
       const tokenName = TOKEN_NAMES[inputMint];
-      const affiliateName = document.getElementById("affiliateToggle").checked ? "Aqua Vaults" : "Pond0x";
+      const affiliateName = document.getElementById("affiliateToggle").checked ? "AquaVaults" : "Pond0x";
       
       if (vault) {
         document.getElementById("activeVault").innerHTML = `${tokenName} Vault (${affiliateName}): ${vault}`;
@@ -251,7 +251,7 @@
       useAffiliate2 = e.target.checked;
       localStorage.setItem("useAffiliate2", useAffiliate2);
       updateAffiliateDisplay();
-      debugLog(`Switched to ${useAffiliate2 ? 'Aqua Vaults' : 'Pond0x'} vaults`);
+      debugLog(`Switched to ${useAffiliate2 ? 'AquaVaults' : 'Pond0x'} vaults`);
     };
 
     document.getElementById("feeInput").oninput = e => {
@@ -347,7 +347,7 @@
         return;
       }
       const tokenName = TOKEN_NAMES[inputMint];
-      const affiliateName = document.getElementById("affiliateToggle").checked ? "Aqua Vaults" : "Pond0x";
+      const affiliateName = document.getElementById("affiliateToggle").checked ? "AquaVaults" : "Pond0x";
 
       debugLog(`Input Token: ${tokenName} (${inputMint})`);
       debugLog(`Using ${affiliateName} Vault: ${referralVault}`);

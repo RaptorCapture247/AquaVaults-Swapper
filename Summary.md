@@ -1,8 +1,8 @@
-# Aqua Vaults Swapper
+# AquaVaults Swapper
 
 ## There is no guarantee your swaps will count towards participation on Pond0x. While I have used and tested this swapper extensively there is no guarantee it is safe. Please do your due diligence and use a burner wallet before connecting a main wallet.
 
-A web-based Solana token swap interface that allows users to swap between various Solana tokens using the Jupiter Aggregator API, with integrated affiliate vault support. Users can select between two affiliates—Pond0x and Aqua Vaults—each with their own token vaults and rewards. The app supports manual wallet connection, slippage and fee adjustment, and provides real-time balance and estimated output.
+A web-based Solana token swap interface that allows users to swap between various Solana tokens using the Jupiter Aggregator API, with integrated affiliate vault support. Users can select between two affiliates—Pond0x and AquaVaults—each with their own token vaults and rewards. The app supports manual wallet connection, slippage and fee adjustment, and provides real-time balance and estimated output.
 
 
 ---
@@ -138,7 +138,7 @@ Estimated output updates automatically when the amount, fee, or slippage changes
 ## Supported Tokens & Vaults
 
 
-| Token        | Pond0x Vault                        | Aqua Vaults Vault                       |
+| Token        | Pond0x Token Vault                        | AquaVaults Token Vault                       |
 |--------------|------------------------------------|----------------------------------------|
 | SOL          | 9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG | 2qcR7nCVRmpxHCYTdQ6G1DjNcDzgEq9eQ1ZrxcmjeVy9 |
 | USDC         | 6NqvoPpSYCPEtLEukQaSNs7mS3yK6k285saH9o3vgC96 | 4en3gmtiPtmiHCi5mwT1TrATj4jNe7woJPZLQaWv6Ezu |
@@ -174,7 +174,7 @@ Displayed dynamically in percentage.
 
 Default affiliate: Pond0x.
 
-Checkbox toggles between Pond0x and Aqua Vaults.
+Checkbox toggles between Pond0x and AquaVaults.
 
 Automatically updates vault addresses and UI labels.
 

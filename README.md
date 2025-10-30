@@ -15,7 +15,7 @@ Step 1 — Download the HTML File from GitHub
 1. Go to the GitHub repository where this README is located.
 
 
-2. Locate the HTML file called Swapper UI.html.
+2. Locate the HTML file called Swapper-UI.html.
 
 
 3. Download it and save it exactly as:

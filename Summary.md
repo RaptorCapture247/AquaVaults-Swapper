@@ -184,7 +184,7 @@ How to Use
 
 
 
-
+---
 🔹 Core Functions
 
 Function	Description

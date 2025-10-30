@@ -115,19 +115,17 @@ Estimated output updates automatically when the amount, fee, or slippage changes
 
 ---
 
-Supported Tokens and Vaults
+## 🔹 Supported Tokens & Vaults
 
-Token	Pond0x Vault	Aqua Vaults Vault
-
-SOL	9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG	2qcR7nCVRmpxHCYTdQ6G1DjNcDzgEq9eQ1ZrxcmjeVy9
-USDC	6NqvoPpSYCPEtLEukQaSNs7mS3yK6k285saH9o3vgC96	4en3gmtiPtmiHCi5mwT1TrATj4jNe7woJPZLQaWv6Ezu
-USDT	5LmFGjbae5iWejFVT8UiRLggh1me22nTetmere8SjwKy	5wV1qSp8n9z5DEGHV6JJoEoxdYeBrnVCtP9LbD4Vwx7D
-wPOND	6NqvoPpSYCPEtLEukQaSNs3yK6k285saH9o3vgC96	E4s4KzRBvYQxpFR1L7z7cLDtT814i7bqWFSGgqCDBCn9
-hSOL	9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG	54GcC3SjZzavvVJ5ipFfCvQHNnpPRsJLXUdfxNmeJHHm
-mSOL	Not supported	49URcyxPiaKRgoEAWfDtJHGWcZus3SVkF39b9Szf3XqC
-PepeOnSOL	3qGSU2RySrjvQ2iGMts2HZ4ssGVSrBUSGL4jN7LHGhgo	Ff7tzrabm8sxHbL4cTmBDby2EQvvtab6NTh56R69u6KS
-
-
+| Token        | Pond0x Vault                        | Aqua Vaults Vault                       |
+|--------------|------------------------------------|----------------------------------------|
+| SOL          | 9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG | 2qcR7nCVRmpxHCYTdQ6G1DjNcDzgEq9eQ1ZrxcmjeVy9 |
+| USDC         | 6NqvoPpSYCPEtLEukQaSNs7mS3yK6k285saH9o3vgC96 | 4en3gmtiPtmiHCi5mwT1TrATj4jNe7woJPZLQaWv6Ezu |
+| USDT         | 5LmFGjbae5iWejFVT8UiRLggh1me22nTetmere8SjwKy | 5wV1qSp8n9z5DEGHV6JJoEoxdYeBrnVCtP9LbD4Vwx7D |
+| wPOND        | 6NqvoPpSYCPEtLEukQaSNs3yK6k285saH9o3vgC96 | E4s4KzRBvYQxpFR1L7z7cLDtT814i7bqWFSGgqCDBCn9 |
+| hSOL         | 9hCLuXrQrHCU9i7y648Nh7uuWKHUsKDiZ5zyBHdZPWtG | 54GcC3SjZzavvVJ5ipFfCvQHNnpPRsJLXUdfxNmeJHHm |
+| mSOL         | Not supported                       | 49URcyxPiaKRgoEAWfDtJHGWcZus3SVkF39b9Szf3XqC |
+| PepeOnSOL    | 3qGSU2RySrjvQ2iGMts2HZ4ssGVSrBUSGL4jN7LHGhgo | Ff7tzrabm8sxHbL4cTmBDby2EQvvtab6NTh56R69u6KS |
 
 ---
 

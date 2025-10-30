@@ -1,4 +1,4 @@
-# AquaVaults Swapper
+# AquaVaults Swapper Setup Guide
 ---
 
 🪐 Running the AquaVaults HTML Swapper Locally (Phantom + Helius RPC)
@@ -10,7 +10,7 @@ This guide walks you through downloading the file, setting up Python, adding you
 
 ---
 
-## There is no guarantee your swaps will count towards participation on Pond0x. While I have used and tested this swapper there is no guarantee it is safe. Please do your due diligence and use a burner wallet before connecting a main wallet.
+## There is no guarantee your swaps will count towards participation on Pond0x. While I have used and tested this swapper there is no guarantee it is safe. Please do your due diligence and use a burner wallet before connecting a main wallet. If you are unfamiliar with code, please copy the Swapper-UI.html file and give it to an AI and ask about its functions and risks.
 
 
 ---

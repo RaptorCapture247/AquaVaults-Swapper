@@ -7,6 +7,8 @@ This project is a single HTML file that must be served via a local server to con
 
 This guide walks you through downloading the file, setting up Python, adding your Helius RPC, and running it locally.
 
+Please see https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/SummaryandOverview.md for technical details.
+
 
 ---
 

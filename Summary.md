@@ -115,7 +115,7 @@ Estimated output updates automatically when the amount, fee, or slippage changes
 
 ---
 
-## 🔹 Supported Tokens & Vaults
+## Supported Tokens & Vaults
 
 | Token        | Pond0x Vault                        | Aqua Vaults Vault                       |
 |--------------|------------------------------------|----------------------------------------|
@@ -185,7 +185,7 @@ How to Use
 
 
 ---
-🔹 Core Functions
+Core Functions
 
 Function	Description
 

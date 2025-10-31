@@ -47,6 +47,11 @@ Step 2 — Install Python (for local server)
 
 Python allows us to run a local web server so the HTML can connect to Phantom Wallet.
 
+
+Latest Python release 10/31/2025
+
+https://www.python.org/downloads/release/python-3140/
+
 Windows
 
 1. Go to Python Downloads for Windows.
@@ -58,7 +63,6 @@ Windows
 3. Run the installer:
 
 ✅ Check “Add Python to PATH” before clicking Install.
-
 
 
 

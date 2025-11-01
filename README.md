@@ -27,8 +27,6 @@ Step 1 — Download the HTML File from GitHub
 
 3. Download it and save it exactly as:
 
-> You do not need to download this entire github repository. Go to https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/Swapper-UI and either download from there or copy the code to a text editor to save.
-
 Swapper-UI.html
 
 Windows: Downloads or Desktop
@@ -38,6 +36,7 @@ Mac: Downloads or Desktop
 
 > ✅ Using the exact filename ensures all instructions below work without needing to adjust the URL.
 
+> You do not need to download this entire github repository. Go to https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/Swapper-UI and either download from there or copy the code to a text editor to save.
 
 
 

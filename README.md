@@ -1,11 +1,11 @@
 # AquaVaults Swapper Setup Guide
 ---
 
-🪐 Running the AquaVaults HTML Swapper Locally (Phantom + Helius RPC)
+🪐 Running the AquaVaults HTML Swapper Locally (Phantom + Custom RPC)
 
-This project is a single HTML file that must be served via a local server to connect to Phantom Wallet and a Solana RPC via Helius. Opening it directly in the browser will not work.
+This project is a single HTML file that must be served via a local server to connect to Phantom Wallet and a Solana RPC. Opening it directly in the browser will not work.
 
-This guide walks you through downloading the file, setting up Python, adding your Helius RPC, and running it locally.
+This guide walks you through downloading the file, setting up Python, and running it locally.
 
 Please see https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/SummaryandOverview.md for technical details.
 
@@ -17,7 +17,7 @@ Please see https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/Summ
 
 ---
 
-Step 1 — Download the HTML File from GitHub
+Step 1 – Download the HTML File from GitHub
 
 1. Go to the GitHub repository where this README is located.
 
@@ -36,13 +36,13 @@ Mac: Downloads or Desktop
 
 > ✅ Using the exact filename ensures all instructions below work without needing to adjust the URL.
 
-> You do not need to download this entire github repository. Go to https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/Swapper-UI and either download from there or copy the code to a text editor to save.
+> You do not need to download this entire github repository. Go to the repository and either download the file directly or copy the code to a text editor to save as a .html file.
 
 
 
 ---
 
-Step 2 — Install Python (for local server)
+Step 2 – Install Python (for local server)
 
 Python allows us to run a local web server so the HTML can connect to Phantom Wallet.
 
@@ -61,7 +61,7 @@ Windows
 
 3. Run the installer:
 
-✅ Check “Add Python to PATH” before clicking Install.
+✅ Check "Add Python to PATH" before clicking Install.
 
 
 
@@ -76,7 +76,7 @@ Mac
 
 python3 --version
 
-If a version appears, you’re ready.
+If a version appears, you're ready.
 
 If not, download Python from Python Downloads for Mac and follow the installer.
 
@@ -84,71 +84,14 @@ If not, download Python from Python Downloads for Mac and follow the installer.
 
 ---
 
-Step 3 — Get a Helius RPC Endpoint
-
-1. Go to Helius API portal and sign up.
-
-
-2. Create a Solana RPC API key.
-
-
-3. Copy your endpoint URL:
-
-
----
-
-Step 4 — Open the HTML File in a Text Editor
-
-You need to edit the file to add your Helius RPC URL.
-
-Windows
-
-1. Right-click Swapper-UI.html → Open with → Notepad (or VS Code, Notepad++).
-
-
-2. Press Ctrl + F and search for:
-
-
-"Your Personal RPC"
-
-
-3. Replace it with your Helius RPC URL:
-
-
-4. Save the file (Ctrl + S).
-
-
-
-Mac
-
-1. Right-click Swapper-UI.html → Open With → TextEdit (or VS Code).
-
-
-2. Press Command + F and search for:
-
-
-"Your Personal RPC"
-
-
-3. Replace it with your Helius RPC URL and save (Command + S).
-
-
-
-> ✅ This ensures users know exactly where to place their RPC without touching other code.
-
-
-
-
----
-
-Step 5 — Open Terminal / Command Prompt
+Step 3 – Open Terminal / Command Prompt
 
 Windows: Press Win + R, type cmd, and hit Enter.
 
 Mac: Open Terminal (Applications → Utilities).
 
 
-Windows Users — How to Find Your Username
+Windows Users – How to Find Your Username
 
 1. Open File Explorer and navigate to your Downloads or Desktop folder.
 
@@ -181,7 +124,7 @@ cd ~/Downloads
 
 ---
 
-Step 6 — Start the Local Server
+Step 4 – Start the Local Server
 
 Run:
 
@@ -202,7 +145,7 @@ Serving HTTP on :: port 8000 ...
 
 ---
 
-Step 7 — Open the File in Your Browser
+Step 5 – Open the File in Your Browser
 
 1. Open your browser.
 
@@ -222,9 +165,41 @@ http://localhost:8000/Swapper-UI.html
 
 ---
 
-Step 8 — (Mac Only) Permissions
+Step 6 – Configure RPC Endpoint
 
-If macOS asks: “Python wants to accept incoming network connections” → click Allow
+When you first open the swapper, you'll see the RPC Configuration panel at the top:
+
+1. Choose your RPC option:
+
+**Default RPC**: Uses the public Solana RPC (free, may be slower)
+
+**Custom RPC**: Use your own RPC provider (recommended for better performance)
+
+
+2. If using Custom RPC:
+
+Enter your RPC endpoint URL (e.g., from Helius, QuickNode, Alchemy)
+
+Click "Confirm RPC"
+
+
+3. Your RPC choice is saved automatically and remembered for future sessions.
+
+
+4. To change RPC later, click "Change RPC" button.
+
+
+
+> ⚡ **Recommended**: Use a custom RPC from providers like Helius (https://helius.dev) or QuickNode for faster, more reliable performance.
+
+
+
+
+---
+
+Step 7 – (Mac Only) Permissions
+
+If macOS asks: "Python wants to accept incoming network connections" → click Allow
 
 If asked for folder access → click OK
 
@@ -234,7 +209,7 @@ If Python is blocked → System Settings → Privacy & Security → Allow Anyway
 
 ---
 
-Step 9 — Stop the Server
+Step 8 – Stop the Server
 
 Press:
 
@@ -245,19 +220,21 @@ in the terminal when finished.
 
 ---
 
-✅ You’re Done!
+✅ You're Done!
 
 The AquaVaults Swapper (Swapper-UI.html) is running locally.
 
-Phantom Wallet is connected.
+Phantom Wallet can be connected.
 
-Helius RPC endpoint is active.
+RPC endpoint is configured through the UI (no code editing needed).
 
 
 Troubleshooting Tips:
 
-Make sure the RPC URL replaced Your Personal RPC in the HTML file.
+Make sure you've configured an RPC endpoint in the UI before trying to connect your wallet.
 
 Ensure Phantom Wallet is installed, unlocked, and the page is served via localhost.
 
 Check the terminal is still running the local server.
+
+If using a custom RPC, verify your endpoint URL is correct and has sufficient credits/quota.

@@ -33,7 +33,7 @@ Each affiliate has dedicated token vaults for different supported tokens.
 
 Active affiliate and vault are clearly displayed in the UI.
 
-For swaps to have the potential to count towards participation on Pond0x.com you must use the Pond0x affiliate. Using AquaVaults is a good faith option where fees are used towards the development of the AquaVaults token pooling system.
+For swaps to have the potential to count towards participation on Pond0x.com you must use the Pond0x affiliate. Using the AquaVaults affiliate is a good faith option where fees are used towards the development of the AquaVaults token pooling system and have no bearing on Pond0x participation.
 
 
 

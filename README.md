@@ -1,6 +1,8 @@
 # AquaVaults Swapper Setup Guide
 ---
 
+> ⚠️ **QUICK TIP**: GitHub may save the HTML file as `.txt` - see Step 1 for how to fix this!
+
 🪐 Running the AquaVaults HTML Swapper Locally (Phantom + Custom RPC + Jupiter API)
 
 This project is a single HTML file that must be served via a local server to connect to Phantom Wallet and a Solana RPC. Opening it directly in the browser will not work.
@@ -48,7 +50,7 @@ Please see https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/Summ
 
 1. Go to the GitHub repository where this README is located.
 
-2. Locate the HTML file called **Swapper-UI.html** (or **AVS-ezRPC2-migrated.html** for the API-enabled version).
+2. Locate the HTML file called **Swapper-UI.html** located in the main repo folder.
 
 3. Download it and save it exactly as:
 
@@ -60,6 +62,66 @@ Please see https://github.com/RaptorCapture247/AquaVaults-Swapper/blob/main/Summ
 > ✅ Using the exact filename ensures all instructions below work without needing to adjust the URL.
 
 > You do not need to download this entire github repository. Go to the repository and either download the file directly or copy the code to a text editor to save as a .html file.
+
+### ⚠️ IMPORTANT: GitHub Downloads as .txt File
+
+**GitHub may save the file as `Swapper-UI.html.txt` instead of `Swapper-UI.html`**
+
+This will prevent the swapper from working. You MUST rename it to remove the `.txt` extension.
+
+#### How to Fix on Windows
+
+1. **Enable file extensions** (if not already visible):
+   - Open File Explorer
+   - Click "View" tab at the top
+   - Check the box for "File name extensions"
+
+2. **Rename the file**:
+   - Find the downloaded file (it will show as `Swapper-UI.html.txt`)
+   - Right-click the file → "Rename"
+   - Remove the `.txt` from the end
+   - Press Enter
+   - Click "Yes" when Windows warns about changing the file extension
+
+3. **Verify**: The file should now show as `Swapper-UI.html` with an icon that looks like a web browser
+
+#### How to Fix on Mac
+
+1. **Rename the file**:
+   - Find the downloaded file in Finder
+   - Click on the filename once to select it
+   - Press Enter (or click again slowly) to edit the name
+   - If it shows as `Swapper-UI.html.txt`, remove the `.txt`
+   - Press Enter to confirm
+
+2. **If Mac hides the extension**:
+   - Right-click the file → "Get Info"
+   - Look at "Name & Extension" section
+   - Uncheck "Hide extension" if checked
+   - Remove `.txt` from the filename if present
+
+3. **Verify**: The file should show as `Swapper-UI.html`
+
+#### Alternative Download Methods (Avoids .txt Issue)
+
+**Method 1: Right-Click Download**
+- Right-click the file in GitHub
+- Select "Save link as..." or "Download linked file"
+- Manually change the filename to `Swapper-UI.html` when saving
+- Make sure "Save as type" is set to "All Files" (not "Text Document")
+
+**Method 2: Copy Raw Code**
+- Click on the HTML file in GitHub
+- Click the "Raw" button (top right of code view)
+- Press Ctrl+A (Windows) or Cmd+A (Mac) to select all
+- Press Ctrl+C (Windows) or Cmd+C (Mac) to copy
+- Open Notepad (Windows) or TextEdit (Mac)
+- Paste the code
+- Save as `Swapper-UI.html` with "Save as type: All Files"
+
+**Method 3: Clone the Repository**
+- If you're comfortable with Git, clone the entire repository
+- The files will have correct extensions automatically
 
 
 ---
@@ -286,6 +348,21 @@ The AquaVaults Swapper is running locally with:
 ---
 
 ## Troubleshooting Tips
+
+### File downloaded as .txt instead of .html
+**Problem**: GitHub saved the file as `Swapper-UI.html.txt`  
+**Solution**: 
+- **Windows**: Enable file extensions (View → File name extensions), then rename file to remove `.txt`
+- **Mac**: Select file, press Enter, remove `.txt` from filename
+- **Alternative**: See Step 1 above for alternative download methods
+- **Verify**: File icon should look like a web browser, not a text document
+
+### Page shows code instead of the swapper interface
+**Problem**: Browser is displaying the HTML code as text  
+**Solution**: This happens if file has wrong extension
+- Check the file is named `.html` not `.html.txt`
+- Make sure you opened it through `localhost:8000` not by double-clicking
+- Follow the .txt fix instructions in Step 1
 
 ### "Please configure Jupiter API key first"
 **Solution**: You need to enter your API key from portal.jup.ag in the Jupiter API Key panel before you can proceed.
